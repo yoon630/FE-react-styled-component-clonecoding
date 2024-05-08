@@ -25,6 +25,12 @@ https://getbootstrap.com/docs/4.3/examples/album/
 
 ![](https://velog.velcdn.com/images/wuzoo/post/509d4112-3edb-482d-82cb-89edf105a060/image.png)
 
+## 구현 조건
+
+1. `components`, `assets`, `pages` 3개의 폴더로 구분하여 개발합니다.
+   - components 폴더엔 내가 구현한 컴포넌트들을, assets 에는 이미지 파일들을, pages 에는 내가 보여줄 페이지 컴포넌트를 위치시킵니다.
+2. 상단에 `Header`는 스크롤하여도 화면에 고정되어 보이도록 합니다.
+
 ## 컴포넌트 계층 구조
 
 주된 컴포넌트인 헤더, 푸터, 포토카드(사진과 글이 있는 것), 버튼에 대해 어떤 계층으로 설계했는지 이곳에 작성해주세요. 그리고 자식 컴포넌트 들에 대해서 어떤 의도를 갖고 설계했는지(ex 정렬하기 위해서, border를 주기 위해서 등) 부담없이 간단하게 적으면 됩니다. (아래는 예시입니다.)
