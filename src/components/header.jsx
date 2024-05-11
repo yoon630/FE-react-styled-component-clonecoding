@@ -14,15 +14,20 @@ const HeaderContainer = styled.div`
 
   background-color: #212529;
   color: white;
+
+  position: fixed;
 `;
 
 const HeaderTitle = styled.h1`
+  font-size: 1.25rem;
   margin-right: 1000px;
 `;
 
 const Icon = styled.img`
-  width: 70px;
+  width: 30px;
+  height: 30px;
   color: white;
+  margin-right: 1rem;
 `;
 
 const Header = () => {
