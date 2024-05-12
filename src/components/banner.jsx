@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const BannerBack = styled.div`
   width: 100%;
-  height: 500px;
+  height: 407px;
   display: flex;
   background-color: white;
   align-items: center;
@@ -19,7 +19,7 @@ const BannerContainer = styled.div`
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  /* justify-content: center; */
+  justify-content: center;
 `;
 
 const BnaeerContentTitle = styled.div`

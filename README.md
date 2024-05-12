@@ -21,9 +21,8 @@ https://getbootstrap.com/docs/4.3/examples/album/
 
 ## 구현 화면
 
-(이곳에 구현한 이미지를 이곳에 첨부해주세요. 아래는 예시 이미지입니다.)
-
-![](https://velog.velcdn.com/images/wuzoo/post/509d4112-3edb-482d-82cb-89edf105a060/image.png)
+./FE-react-styled-component-clonecoding\src\assets\스크린샷 2024-05-12 170311.png
+구현화면 경로는 assets 폴더안에 이미지에 스크린샷이라고 되어있는 이미지입니다.
 
 ## 구현 조건
 
@@ -51,5 +50,30 @@ https://getbootstrap.com/docs/4.3/examples/album/
    BannerContentSub는 큰 타이틀 밑에 서브 텍스트 부분을 맡은 컴포넌트입니다. 이부분의 컬러는 #6c757d로 했습니다.
 
    마지막으로 Button모양 처럼 생긴 두 부분은 크게 ButtonContainer라는 컴포넌트로 감싸고 첫번째 파란색 버튼은 BannerButtonMain으로 두번째 회색 버튼은 BannerButtonSecond로 만들었습니다. 이 버튼들은 border-radius나 cursor를 pointer로 하는 등의 새로운 스타일을 지정했습니다.
+
+3. Card
+   이 부분이 젤 어려웠습니다..ㅠㅠ 그리드 쓰면 편하다고 하셨는데 그리드가 익숙하지 않다보니 그냥 div태그와 각 태그들이 가진 display성질이랑 container들을 몇개를 구성해야 차례로 배치할 수 있을지 생각하느라 머리 터질뻔 했어요;;;; 프장님 진짜 너무하십니다. 바빠죽겠는데;;; 과제 좀 쉽게 내주세요
+
+   그래서 이 Card부분은 다른 header나 Banner보다 훨씬 컴포넌트를 많이 만들었습니다. 들어갈 text랑 image들이 많다보니 이렇게 많아질 줄은 몰랐네요.
+
+   -CardStyle은 Card부분의 총 width랑 height를 지정하고 백그라운드 컬러가 흰색이 아니어서 다른 색상으로 입혀줬습니다.
+
+   -Container 부분은 최종적인 각각의 box들을 담을 부분이구요, 그래서 height나 width가 CardStyle보단 작습니다. margin이나 padding도 넣어줬습니다.
+
+   -BoxArray부분은 각 상자들 나란히 배치하는 것을 담당했습니다. 그래서 flex-wrap으로 해줬습니다.
+
+   -WrapCard 부분이 바로 이미지 부분과 밑에 글씨를 한번에 묶는 태그입니다.
+   box-sizing 은 border-box로 해주고 컬러는 흰색, radius도 주었습니다.
+
+   -ImageBox는 이미지 부분 한번에 묶을 div태그입니다. 그냥 이미지 태그로 하면 block성질 아니라서 배치 이상해질까봐 div로 묶어서 했습니다.
+
+   -Image 부분은 이미지 들어갈 부분이라 img태그로 해줬습니다. 꽁꽁 고양이 사진.src참고
+
+   -TextBox는 text랑 묶는 div태그입니다.
+   -Text는 p태그로 해줬구요 지금 생각해보니 div태그로하지 굳이 왜 두개를 만들었나 의문이 갑자기..여튼 그렇습니다..
+
+   -ButtonGroup은 Button두개 한번에 묶을 컴포넌트이구요. div태그로 만들었습니다.
+   나란히 배치해야해서 display는 flex로 해줬습니다.
+   -IndividualButton 컴포넌트는 버튼 두개 각각 만들기엔 스타일이 비슷해서 Button태그로 한번에 스타일 지정했습니다. color는 6C757D이고 border-radius도 주고 background-color는 white로 했습니다.
 
 ![](https://velog.velcdn.com/images/wuzoo/post/ab092dd4-595e-41ab-a850-85cab0c83e80/image.png)
